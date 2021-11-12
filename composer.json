@@ -1,0 +1,264 @@
+{
+    "name": "drupal/recommended-project",
+    "description": "Project template for Drupal 9 projects with a relocated document root",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/drupal",
+    "support": {
+        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+        "chat": "https://www.drupal.org/node/314178"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor-plugin/templates",
+                "version": "4.16.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/templates/releases/templates_4.16.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor-plugin/autosave",
+                "version": "0.18.6",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com//autosave/releases/autosave_0.18.6.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor-plugin/autogrow",
+                "version": "4.16.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/autogrow/releases/autogrow_4.16.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor-plugin/font",
+                "version": "4.16.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/font/releases/font_4.16.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor-plugin/markdown",
+                "version": "1.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/markdown/releases/markdown_1.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "malsup/cycle",
+                "version": "dev-master",
+                "type":"drupal-library",
+                "source": {
+                    "url": "https://github.com/malsup/cycle",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "douglascrockfordmalsup/json-js",
+                "version": "dev-master",
+                "type":"drupal-library",
+                "source": {
+                    "url": "https://github.com/douglascrockford/JSON-js",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "briancherne/jquery-hoverintent",
+                "version": "dev-master",
+                "type":"drupal-library",
+                "source": {
+                    "url": "https://github.com/briancherne/jquery-hoverIntent",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
+    "require": {
+        "bower-asset/lazysizes": "^5.1",
+        "briancherne/jquery-hoverintent": "dev-master",
+        "ckeditor-plugin/autogrow": "4.16.0",
+        "ckeditor-plugin/autosave": "0.18.6",
+        "ckeditor-plugin/font": "4.16.0",
+        "ckeditor-plugin/markdown": "^1.0",
+        "ckeditor-plugin/templates": "4.16.0",
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "~1.0",
+        "douglascrockfordmalsup/json-js": "dev-master",
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/admin_toolbar_tools": "^3.0",
+        "drupal/autocomplete_deluxe": "^2.0@RC",
+        "drupal/backup_migrate": "^5.0@RC",
+        "drupal/bootstrap_barrio": "^5.1",
+        "drupal/ckeditor_font": "^1.1",
+        "drupal/ckeditor_templates": "^1.2",
+        "drupal/ckeditor_templates_ui": "^1.4",
+        "drupal/content_lock": "^2.2",
+        "drupal/core-composer-scaffold": "^9",
+        "drupal/core-project-message": "^9",
+        "drupal/core-recommended": "^9",
+        "drupal/devel": "^4.1",
+        "drupal/diff": "^1.0",
+        "drupal/elasticsearch_connector": "^7.0@alpha",
+        "drupal/entityqueue": "^1.2",
+        "drupal/feeds": "^3.0@alpha",
+        "drupal/feeds_ex": "^1.0@alpha",
+        "drupal/field_group": "^3.1",
+        "drupal/jquery_ui": "^1.4",
+        "drupal/lazy": "^3.6",
+        "drupal/media_watermark": "1.x-dev@dev",
+        "drupal/metatag": "^1.15",
+        "drupal/migrate_plus": "^5.1",
+        "drupal/migrate_source_csv": "^3.4",
+        "drupal/migrate_tools": "^5.0",
+        "drupal/page_manager": "^4.0@beta",
+        "drupal/paragraphs": "^1.12",
+        "drupal/pathauto": "^1.8",
+        "drupal/profile": "^1.2",
+        "drupal/pwa": "1.x-dev@dev",
+        "drupal/recreate_block_content": "^2.1",
+        "drupal/redis": "^1.5",
+        "drupal/scheduled_publish": "^3.9",
+        "drupal/search_api": "^1.19",
+        "drupal/search_autocomplete": "^2.0",
+        "drupal/sharethis": "^2.0@beta",
+        "drupal/social_media_links": "^2.7",
+        "drupal/structure_sync": "^2.0",
+        "drupal/taxonomy_import": "^2.0@alpha",
+        "drupal/taxonomy_manager": "^2.0",
+        "drupal/views_infinite_scroll": "^1.7",
+        "drupal/views_slideshow": "^4.8",
+        "drupal/weight": "^3.2",
+        "drupal/wordpress_migrate": "^3.0@alpha",
+        "drupal/workbench_moderation": "^1.6",
+        "drupal/xmlsitemap": "^1.0",
+        "drupal/yoast_seo": "^1.7",
+        "drush/drush": "^10.3",
+        "malsup/cycle": "dev-master",
+        "platformsh/config-reader": "^2.4",
+        "drupal/path_redirect_import": "^1.0@beta"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "installer-types": [
+            "bower-asset", "npm-asset"
+        ],
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library", "type:bower-asset", "type:npm-asset","vendor:ckeditor-plugin"
+            ]
+        },
+        "drupal-core-project-message": {
+            "include-keys": [
+                "homepage",
+                "support"
+            ],
+            "post-create-project-cmd-message": [
+                "<bg=blue;fg=white>                                                         </>",
+                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
+                "<bg=blue;fg=white>                                                         </>",
+                "",
+                "<bg=yellow;fg=black>Next steps</>:",
+                "  * Install the site: https://www.drupal.org/docs/8/install",
+                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+                "  * Get support: https://www.drupal.org/support",
+                "  * Get involved with the Drupal community:",
+                "      https://www.drupal.org/getting-involved",
+                "  * Remove the plugin that prints this message:",
+                "      composer remove drupal/core-project-message"
+            ]
+        },
+        "patches": {
+            "drupal/core": {
+                "https://www.drupal.org/project/drupal/issues/3160238#comment-13901630": "https://www.drupal.org/files/issues/2020-11-13/3160238-36_drupal-9_2.patch",
+                "https://www.drupal.org/project/drupal/issues/2957368#comment-13894553": "https://www.drupal.org/files/issues/2020-11-06/2957368-14.patch"
+            },
+            "drupal/media_watermark": {
+                "https://www.drupal.org/project/media_watermark/issues/3204827#comment-14046195": "https://www.drupal.org/files/issues/2021-03-30/3204827-3.patch"
+            },
+            "drupal/views_slideshow": {
+                "https://www.drupal.org/project/views_slideshow/issues/2673910#comment-14043255": "https://www.drupal.org/files/issues/2021-03-26/2673910-38.patch"
+            },
+            "drupal/path_redirect_import": {
+                "Fatal Error  Fix": "patches/fatal-error-fix.patch"
+            }
+        }
+    }
+}
